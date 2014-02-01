@@ -1,0 +1,44 @@
+﻿.ticker-wrapper {
+		width:300px;
+		height:515px;
+		position: relative;
+		overflow:hidden;
+		background: url(../heartbeat/background.png) no-repeat;
+		border:1px solid grey;
+	}
+	.ticker-wrapper .innerContent {
+		position:absolute;
+		top:79px;
+		overflow:hidden;
+		height:363px;
+	}
+
+	.ticker-wrapper .innerContent A IMG {
+		border:none;
+	}
+	.ticker-wrapper .ticker-arrows {
+		display:inline-block;
+		width:30px;
+		height:30px;
+		position:absolute;
+		left:20px;
+		text-decoration:none;
+		z-index:999;
+		background: url(../images/tickerarrows.png) no-repeat;
+	}
+
+	.ticker-wrapper #ticker-up {
+		top:49px;
+		background-position:-14px -7px;
+	}
+	.ticker-wrapper #ticker-up:hover {
+		  background-position: -49px -7px;
+	}
+
+	.ticker-wrapper #ticker-down {
+		top:474px;
+		background-position: -14px -43px;
+	}
+	.ticker-wrapper #ticker-down:hover {
+		background-position: -49px -43px;
+	}

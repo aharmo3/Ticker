@@ -12,7 +12,10 @@
 		overflow:hidden;
 		height:363px;
 	}
-
+	.ticker-wrapper .innerContent .item {
+		
+	}
+	
 	.ticker-wrapper .innerContent A IMG {
 		border:none;
 	}

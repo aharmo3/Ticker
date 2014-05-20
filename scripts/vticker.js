@@ -15,7 +15,6 @@
 		var pluginName = "vticker",
 				defaults = {
 				activeElement: ".item",
-				upArrow: "Yo!"
 		};
 
 		// The actual plugin constructor
@@ -66,6 +65,7 @@
 						Plugin.prototype.hbanimationUp();
 					});
 				},
+				
 				adjustFirst: function () {
 					
 					$('#heartbeatModule').find('.item').last()
@@ -80,12 +80,6 @@
 				hbanimationUp: function () {
 					var $tickerItem = $('#heartbeatModule').find('.item');
 				
-					//Grab outerheight of 3 elements in view and set wrapper height
-					$('.innerContent').css('height', 
-						$tickerItem.eq(2).outerHeight() 
-						+ $tickerItem.eq(3).outerHeight() 
-						+ $tickerItem.eq(4).outerHeight()
-						);
 							
 					$tickerItem.first()
 						.remove()
@@ -103,11 +97,6 @@
 				
 				hbanimationDown: function () {
 					var $tickerItem = $('#heartbeatModule').find('.item');
-					$('.innerContent').css('height', 
-						$tickerItem.eq(0).outerHeight() 
-						+ $tickerItem.eq(1).outerHeight() 
-						+ $tickerItem.eq(2).outerHeight());
-						
 					var marginTop = -1 * ($tickerItem.last().outerHeight(true));
 					
 					$tickerItem.first().stop().animate({

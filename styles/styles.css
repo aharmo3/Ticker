@@ -10,7 +10,7 @@
 		position:absolute;
 		top:79px;
 		overflow:hidden;
-		height:363px;
+		height:392px;
 	}
 	.ticker-wrapper .innerContent .item {
 		
@@ -45,3 +45,23 @@
 	.ticker-wrapper #ticker-down:hover {
 		background-position: -49px -43px;
 	}
+	
+	.item {
+  font: 15px Gill sans;
+  clear:both;
+  margin-bottom:10px;
+  overflow:hidden;
+  min-height: 90px;
+  
+}
+.flleft {
+  float:left;
+  margin-left: 10px;
+  max-width: 62%;
+}
+H3 {
+  margin: 0;
+  font-weight:normal;
+  line-height: 16px;
+  margin-bottom:5px;
+}
